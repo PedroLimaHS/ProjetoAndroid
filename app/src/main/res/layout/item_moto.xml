@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pedro.motosapi.MotosActivity"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="97dp"
+        tools:srcCompact="@mipmap/ic_laucher"
+        android:id="@+id/moto_poster"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignTop="@+id/moto_poster"
+        android:layout_toEndOf="@+id/moto_modelo"
+        android:id="@+id/moto_marca"
+        android:layout_toRightOf="@+id/moto_modelo" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moto_marca"
+        android:layout_toRightOf="@+id/moto_poster"
+        android:layout_toEndOf="@+id/moto_poster"
+        android:id="@+id/moto_modelo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moto_modelo"
+        android:layout_toRightOf="@+id/moto_poster"
+        android:layout_toEndOf="@+id/moto_poster"
+        android:id="@+id/moto_ano"/>
+
+</RelativeLayout>
